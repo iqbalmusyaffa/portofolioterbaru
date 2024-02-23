@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+      <nav>
+       <h1><a href="#">Portofolio</a></h1>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">My Project</a></li>
+          <li><a href="#services">My Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div id="close">
+            <i class="fa-solid fa-xmark" onclick="closemenu()" hidden="true"></i>
+          </div>
+        </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Hello My name is <br><span>Iqbal Musyaffa</span></p>
+        <h3 class="typewrite text-white" data-period="2000" data-type='[ " I Am","Front end Developer","IT Support","Back End Developer" ]'>
+          <span class="wrap">Hello, World!.</span>
+      </h3>
+      <br>
+      <button><a href="assets/Cv Iqbal Musyaffa Yusa Bbih Lillah.pdf">Download CV</a></button>
+      </div>
+    </div>
+   </div>
+  
+   <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+            <img src="assets/img/bg2.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="judul">About Me</h1>
+          <p>Halo Perkenalkan nama saya iqbal musyaffa yusa bbih lillah biasanya dipanggil iqbal saya berumur 20 tahun saya seorang yang menyukai tentang teknologi</p>
+          <div class="tab-judul">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Front End Developer</span><br>HTML<br>CSS<br>JavaScript</li>
+              <li><span>IT Support</span><br> Mampu Menguasai Sistem Operasi Linux Ubuntu<br> Mampu Memperbaiki Sistem Operasi Linux Ubuntu</li>
+              <li><span>Back End Developer</span><br>WordPress<br>PHP pemula</li>
+            </ul>
+          </div> 
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2009-2015</span><br>SDN 2 TAMANAGUNG</li>
+              <li><span>2015-2018</span><br>SMPN 2 CLURING</li>
+              <li><span>2018-2021</span><br>SMAN 2 GENTENG</li>
+              <li><span>2021-sekarang</span><br>Institut Teknologi Telkom Surabaya</li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+    </div>  
+  </div>
+ <div id="project">
+  <div class="container">
+    <h1 class="text1">My Project</h1>
+  </div>
+  <br>
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+        <img src="assets/img/project-1.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+        <img src="assets/img/project-2.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+        <img src="assets/img/projek3.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+        <img src="assets/img/project4.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="assets/img/project 5.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+        <img src="assets/img/project 6.jpeg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+        <img src="assets/img/project 7.jpeg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="assets/img/project-1.png" style="width:100%" onclick="currentSlide(1)" alt="Web hosting v1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="assets/img/project-2.png" style="width:100%" onclick="currentSlide(2)" alt="Dashboard web Hosting">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="assets/img/projek3.png" style="width:100%" onclick="currentSlide(3)" alt="Web Portofolio v1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="assets/img/project4.png" style="width:100%" onclick="currentSlide(4)" alt="aplikasi python Gajiku">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="assets/img/project 5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Website Diary uang">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="assets/img/project 6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="webiste ticketing kapal online sederhana">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="assets/img/project 7.jpeg" style="width:100%" onclick="currentSlide(7)" alt="webiste ticketing kapal online sederhana">
+      </div>
+      </div>
+    </div>
+  </div> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title1">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Back End Developer</h2>
+          <p>merancang database sedemikian rupa hingga tidak memberatkan server dan membuatnya tetap aman.</p>
+          <a href="#">Klik Disini</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Front End Developer</h2>
+          <p>mendesain antarmuka website. Tujuannya, agar website memiliki tampilan yang baik dan fitur-fitur yang mudah digunakan pengunjung.</p>
+          <a href="#">Klik Disini</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-network-wired"></i>
+          <h2>IT Support</h2>
+          <p>seseorang atau suatu tim yang bertugas menjadi pelaksana dan pemelihara sistem informasi teknologi dalam sebuah perusahaan.</p>
+          <a href="#">Klik Disini</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title2">Contact</h1>
+          <p><i class="fa-solid fa-envelope"></i>yusa82401@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>087765079444</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/iqbal.musyaffayusa?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/iqbal_musyaffa78/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/ys-gaming-951564242"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCcWzPrTUHLTABpLDS1f-a7A"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+          <input type="text" name="nama" placeholder="Nama kamu" required>
+          <input type="email" name="email" placeholder="Masukan Email Kamu" required>
+          <textarea name="pesan" rows="6" placeholder="Masukan Pesan Kamu"></textarea>
+          <button type="submit" class="btn btn2">submit</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> 2022 Build By <i class="fa-solid fa-heart"></i> Iqbal Musyaffa</p>
+  </div>
+  <script src="assets/js/aplikasi.js"></script>
+</body>
+</html>
